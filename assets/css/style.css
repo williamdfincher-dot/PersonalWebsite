@@ -39,7 +39,8 @@ nav a { margin-left: 1rem; }
 nav a:first-child { margin-left: 0; }
 
 h1 { font-size: 1.6rem; font-weight: normal; margin: 0 0 1.5rem; }
-h2 { font-size: 1.2rem; font-weight: normal; margin-top: 2.5rem; }
+h2 { font-size: 1.3rem; font-weight: bold; margin: 2.5rem 0 0.75rem; }
+h3 { font-size: 1.1rem; font-weight: bold; margin: 2rem 0 0.5rem; }
 
 .date { color: var(--muted); }
 h1 + .date, h1 + .subtitle { margin-top: -1rem; }
