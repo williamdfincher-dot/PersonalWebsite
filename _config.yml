@@ -1,0 +1,39 @@
+title: Will Fincher
+description: Writing, projects, and ideas from Will Fincher.
+url: "https://willfincher.com"
+author: Will Fincher
+
+permalink: /blog/:title/
+
+# Every post uses the post layout, so posts only need a title.
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+  - scope:
+      path: ""
+      type: drafts
+    values:
+      layout: post
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+feed:
+  path: blog/feed.xml
+
+nav:
+  - title: Home
+    url: /
+  - title: About
+    url: /about/
+  - title: Projects
+    url: /projects/
+  - title: Blog
+    url: /blog/
+
+exclude:
+  - README.md

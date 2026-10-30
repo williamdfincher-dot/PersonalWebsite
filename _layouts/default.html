@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='44' fill='%23f2d46b'/></svg>">
+  {% feed_meta %}
+  {% seo %}
+</head>
+<body>
+  <header class="site-header">
+    <a class="site-name" href="{{ '/' | relative_url }}"><span class="dot" aria-hidden="true"></span>{{ site.title }}</a>
+    <nav>
+      {% for item in site.nav %}
+        {% assign is_current = false %}
+        {% if item.url == '/' and page.url == '/' %}{% assign is_current = true %}{% endif %}
+        {% if item.url != '/' and page.url contains item.url %}{% assign is_current = true %}{% endif %}
+        <a href="{{ item.url | relative_url }}"{% if is_current %} aria-current="page"{% endif %}>{{ item.title }}</a>
+      {% endfor %}
+    </nav>
+  </header>
+
+  <main>
+    {{ content }}
+  </main>
+
+  <footer class="site-footer">
+    <p>© {{ 'now' | date: '%Y' }} {{ site.author }} · <a href="{{ '/blog/feed.xml' | relative_url }}">RSS</a></p>
+  </footer>
+</body>
+</html>
