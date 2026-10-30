@@ -42,7 +42,9 @@ h1 { font-size: 1.6rem; font-weight: normal; margin: 0 0 1.5rem; }
 h2 { font-size: 1.2rem; font-weight: normal; margin-top: 2.5rem; }
 
 .date { color: var(--muted); }
-h1 + .date { margin-top: -1rem; }
+h1 + .date, h1 + .subtitle { margin-top: -1rem; }
+.subtitle { font-style: italic; color: var(--muted); }
+.subtitle + .date { margin-top: -0.5rem; }
 
 ul.posts { list-style: none; padding: 0; }
 ul.posts li { margin-bottom: 0.4rem; }

@@ -1,6 +1,6 @@
 ---
 title: "Your post title"
-description: "Optional. One sentence used for link previews."
+description: "Optional subtitle, shown under the title."
 ---
 
 This is a template. Files in `_drafts/` are never published.
