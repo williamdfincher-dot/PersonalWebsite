@@ -1,8 +1,0 @@
-{% assign p = include.project %}
-<li class="project-card">
-  {% if p.url %}<a href="{{ p.url }}">{% endif %}
-    <h3>{{ p.name }}</h3>
-    <p>{{ p.description }}</p>
-    {% if p.tags %}<p class="tags">{% for tag in p.tags %}<span>{{ tag }}</span>{% endfor %}</p>{% endif %}
-  {% if p.url %}</a>{% endif %}
-</li>

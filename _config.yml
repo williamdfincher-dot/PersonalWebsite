@@ -1,5 +1,5 @@
 title: Will Fincher
-description: Writing, projects, and ideas from Will Fincher.
+description: Will Fincher's website.
 url: "https://willfincher.com"
 author: Will Fincher
 
@@ -26,8 +26,6 @@ feed:
   path: blog/feed.xml
 
 nav:
-  - title: Home
-    url: /
   - title: About
     url: /about/
   - title: Projects

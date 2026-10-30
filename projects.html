@@ -3,12 +3,9 @@ layout: default
 title: Projects
 permalink: /projects/
 ---
-<article class="page">
-  <h1>Projects</h1>
-  <p class="lede">Things I've built, mostly to scratch my own itch.</p>
-  <ul class="project-grid">
-    {% for project in site.data.projects %}
-      {% include project-card.html project=project %}
-    {% endfor %}
-  </ul>
-</article>
+<h1>Projects</h1>
+<ul>
+  {% for p in site.data.projects %}
+  <li>{% if p.url %}<a href="{{ p.url }}">{{ p.name }}</a>{% else %}{{ p.name }}{% endif %}: {{ p.description }}</li>
+  {% endfor %}
+</ul>

@@ -2,8 +2,6 @@
 layout: default
 title: Blog
 ---
-<article class="page">
-  <h1>Blog</h1>
-  <p class="lede">Essays, notes, and half-finished thoughts.</p>
-  {% include post-list.html %}
-</article>
+<h1>Blog</h1>
+{% include post-list.html %}
+<p><a href="{{ '/blog/feed.xml' | relative_url }}">RSS</a></p>

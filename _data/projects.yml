@@ -1,23 +1,17 @@
-# Projects shown on /projects/ (the first two also appear on the home page).
-# Each entry: name, description, optional url, optional tags.
+# Projects shown on /projects/. Each entry: name, description, optional url.
 # These are placeholders based on repo names; rewrite them however you like.
 
 - name: Belief Atlas
-  description: A source-first research index of AI beliefs and predictions.
-  tags: [research, AI]
+  description: a source-first research index of AI beliefs and predictions.
 
 - name: Law Docket
-  description: An organizer for 1L law school, with deadlines, readings, cases and outlines in one place.
-  tags: [law school, tools]
+  description: deadlines, readings, cases and outlines for 1L.
 
 - name: FocusQuest
-  description: A small app for staying focused. Description coming soon.
-  tags: [productivity]
+  description: description coming soon.
 
 - name: YouTube Shorts Blocker
-  description: A browser extension that hides YouTube Shorts.
-  tags: [browser extension]
+  description: a browser extension that hides YouTube Shorts.
 
 - name: Twitch Ad Blocker
-  description: A browser extension for watching Twitch without the ad breaks.
-  tags: [browser extension]
+  description: a browser extension that skips Twitch ads.

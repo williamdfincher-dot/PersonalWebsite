@@ -1,29 +1,9 @@
 ---
 layout: default
-title: Home
+title: Will Fincher
 ---
-<section class="hero">
-  <h1>Hi, I'm Will.</h1>
-  <!-- TODO: replace with your intro -->
-  <p class="lede">A short intro is coming soon. In the meantime, here's where I write things down and keep track of what I'm building.</p>
-</section>
+<!-- TODO: replace with your intro -->
+<p>Intro coming soon.</p>
 
-<section class="home-section">
-  <div class="section-head">
-    <h2>Recent writing</h2>
-    <a href="{{ '/blog/' | relative_url }}">All posts →</a>
-  </div>
-  {% include post-list.html limit=5 %}
-</section>
-
-<section class="home-section">
-  <div class="section-head">
-    <h2>Things I've made</h2>
-    <a href="{{ '/projects/' | relative_url }}">All projects →</a>
-  </div>
-  <ul class="project-grid">
-    {% for project in site.data.projects limit: 2 %}
-      {% include project-card.html project=project %}
-    {% endfor %}
-  </ul>
-</section>
+<h2>Writing</h2>
+{% include post-list.html limit=5 %}

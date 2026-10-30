@@ -14,7 +14,7 @@ to install or deploy.
    ```markdown
    ---
    title: "Why I Started Writing"
-   description: "One sentence shown under the title in the post list."
+   description: "Optional. One sentence used for link previews."
    ---
 
    Post text goes here.
